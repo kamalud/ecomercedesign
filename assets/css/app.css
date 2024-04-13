@@ -172,6 +172,9 @@ nav .nav_body .action_menu ul {
   align-items: center;
   gap: 25px;
 }
+nav .nav_body .action_menu ul li {
+  position: relative;
+}
 nav .nav_body .action_menu ul li a {
   font-size: 18px;
   color: var(--black);
@@ -180,6 +183,10 @@ nav .nav_body .action_menu ul li a {
 nav .nav_body .action_menu ul li a:hover {
   color: var(--primary);
 }
+nav .nav_body .action_menu ul li:has(.active) > a, nav .nav_body .action_menu ul li:has(.active) i {
+  color: var(--primary);
+}
+
 #jumbo_menu {
   background-color: rgba(0, 0, 0, 0.521);
   height: calc(100vh - 103px);
@@ -294,6 +301,51 @@ nav .nav_body .action_menu ul li a:hover {
   font-size: 16px;
   color: var(--black);
   font-weight: 400;
+}
+
+.user_drop_down_actions {
+  position: absolute;
+  top: calc(100% + 39px);
+  right: 0;
+  width: 230px;
+  padding: 16px;
+  box-shadow: 1px 3px 10px -2px rgba(12, 104, 244, 0.5490196078);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top: 2px solid var(--primary);
+  display: none;
+  z-index: 10;
+}
+.user_drop_down_actions.active {
+  display: block;
+}
+.user_drop_down_actions ul {
+  display: grid;
+  gap: 24px;
+}
+.user_drop_down_actions ul li a {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.user_drop_down_actions ul li a.hover .content h4, .user_drop_down_actions ul li a.hover .content p {
+  color: var(--primary);
+}
+.user_drop_down_actions ul li a .content h4 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+.user_drop_down_actions ul li a .content h4.block {
+  color: var(--black);
+}
+.user_drop_down_actions ul li a .content p {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  font-weight: 300;
 }
 
 @font-face {
