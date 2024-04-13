@@ -53,6 +53,7 @@ nav{
                 align-items: center;
                 gap: 25px;
                 li{
+                    position: relative;
                     a{
                         font-size: 18px;
                         color: var(--black);
@@ -62,6 +63,12 @@ nav{
                         }
                         i{
                             
+                        }
+                    }
+                    &:has(.active){
+                       > a,i{
+                            color: var(--primary);
+                            // color: red;
                         }
                     }
                 }
