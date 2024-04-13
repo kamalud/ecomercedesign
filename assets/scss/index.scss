@@ -1,0 +1,20 @@
+@import "./vendors/fonts";
+@import "./vendors/vairables";
+@import "./mixins/mixin";
+@import "./vendors/reset";
+
+
+@import "./components/button";
+@import "./components/commonheading";
+
+
+@import "./layouts/container";
+@import "./layouts/headers";
+@import "./layouts/navber";
+@import "./layouts/jumbo_menu_product";
+@import "./layouts/footer";
+
+
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/contact";
