@@ -1,240 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ecomerce site</title>
-        <link rel="stylesheet" href="./assets/css/app.css" />
-        <link rel="stylesheet" href="./assets/css/fontawesome/css/all.css" />
-        <script src="./assets/js/app.js"></script>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="container">
-                    <div class="nav_body">
-                        <div class="logo">
-                            <img src="./assets/images/logo.png" alt="" />
-                        </div>
-                        <div class="menu">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#" onclick="jumbo_menu.classList.toggle('active')">Product</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Faq</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="action_menu">
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" onclick="user_drop_down_actions.classList.toggle('active')"><i class="fa-regular fa-user"></i></a>
-                                    <div id="user_drop_down_actions" class="user_drop_down_actions">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="icon">
-                                                      <i class="fa-regular fa-circle-user"></i>
-                                                    </div>
-                                                    <div class="content">
-                                                        <h4 class="block">Mr kamal</h4>
-                                                        <p>uddinkamal103@mail.com</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="icon">
-                                                        <i class="fa-solid fa-bag-shopping"></i>
-                                                    </div>
-                                                    <div class="content">
-                                                        <h4 class="block">Orders</h4>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="icon">
-                                                     <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                    <div class="content">
-                                                        <h4 class="block">Wish list</h4>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="icon">
-                                                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                                    </div>
-                                                    <div class="content">
-                                                        <h4 class="block">Logout</h4>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecomerce site</title>
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="./assets/css/fontawesome/css/all.css" />
+    <script src="./assets/js/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav_body">
+                    <div class="logo">
+                        <img src="./assets/images/logo.png" alt="" />
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#" onclick="jumbo_menu.classList.toggle('active')">Product</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="action_menu">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="user_drop_down_actions.classList.toggle('active')"><i
+                                        class="fa-regular fa-user"></i></a>
+                                <div id="user_drop_down_actions" class="user_drop_down_actions">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-circle-user"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <h4 class="block">Mr kamal</h4>
+                                                    <p>uddinkamal103@mail.com</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <h4 class="block">Orders</h4>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <h4 class="block">Wish list</h4>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <h4 class="block">Logout</h4>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><i onclick="cart_item.classList.toggle('active')"
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                                <div class="cart_item" id="cart_item">
+                                    <div class="top_cart">
+                                        <h3 class="text">3 items</h3>
                                     </div>
-                                </li>
-                                <li>
-                                    <a href="#"><i onclick="cart_item.classList.toggle('active')" class="fa-solid fa-cart-shopping"></i></a>
-                                    <div class="cart_item" id="cart_item">
-                                        <div class="top_cart">
-                                            <h3 class="text">3 items</h3>
-                                        </div>
-                                        <div class="mid_cart">
-                                          <div class="cart_item_list">
+                                    <div class="mid_cart">
+                                        <div class="cart_item_list">
                                             <div class="cart_list">
-                                              <div class="cart_img">
-                                                <img src="./assets/images/product/11.jpg" alt="">
-                                              </div>
-                                              <div class="cart_text">
-                                                  <h3 class="product_name">adepter caharger</h3>
-                                                  <h2 class="size">34 volt</h2>
-                                                  <h4 class="color">black</h4>
-                                                  <div class="qty">x 1</div>
-
-                                                  <div class="extra_features">
-                                                    <ul>
-                                                        <li>
-                                                            <div class="icon"><i class="fa-solid fa-van-shuttle"></i></div>
-                                                            <div class="text">free delivery</div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="icon"><i class="fa-solid fa-medal"></i></div>
-                                                            <div class="text">guarnted</div>
-                                                        </li>
-                                                    </ul>
-                                                  </div>
-
-                                                  <div class="qty_changer">
-                                                    <div class="price">
-                                                        $478
+                                                <div class="cart_img">
+                                                    <img src="./assets/images/product/11.jpg" alt="">
+                                                </div>
+                                                <div class="cart_text">
+                                                    <h3 class="product_name">adepter caharger</h3>
+                                                    <h2 class="size">34 volt</h2>
+                                                    <h4 class="color">black</h4>
+                                                    <div class="qty">x 1</div>
+                                                    <div class="extra_features">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-van-shuttle"></i></div>
+                                                                <div class="text">free delivery</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="icon"><i class="fa-solid fa-medal"></i>
+                                                                </div>
+                                                                <div class="text">guarnted</div>
+                                                            </li>
+                                                        </ul>
                                                     </div>
-                                                    <div class="qty_update">
-                                                        <button class="trash"><i class="fa-regular fa-trash-can"></i></button>
-                                                        <div class="qty_input">
-                                                            <button class="plush"><i class="fa-solid fa-plus"></i></button>
-                                                            <input class="input" type="number" value="1" min="1" />
-                                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                                    <div class="qty_changer">
+                                                        <div class="price">
+                                                            $478
+                                                        </div>
+                                                        <div class="qty_update">
+                                                            <button class="trash"><i
+                                                                    class="fa-regular fa-trash-can"></i></button>
+                                                            <div class="qty_input">
+                                                                <button class="plush"><i
+                                                                        class="fa-solid fa-plus"></i></button>
+                                                                <input class="input" type="number" value="1" min="1" />
+                                                                <button class="minus"><i
+                                                                        class="fa-solid fa-minus"></i></button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                              </div>
-
-
                                             </div>
                                             <div class="cart_list">
-                                              <div class="cart_img">
-                                                <img src="./assets/images/product/11.jpg" alt="">
-                                              </div>
-                                              <div class="cart_text">
-                                                  <h3 class="product_name">adepter caharger</h3>
-                                                  <h2 class="size">34 volt</h2>
-                                                  <h4 class="color">black</h4>
-                                                  <div class="qty">x 1</div>
-
-                                                  <div class="extra_features">
-                                                    <ul>
-                                                        <li>
-                                                            <div class="icon"><i class="fa-solid fa-van-shuttle"></i></div>
-                                                            <div class="text">free delivery</div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="icon"><i class="fa-solid fa-medal"></i></div>
-                                                            <div class="text">guarnted</div>
-                                                        </li>
-                                                    </ul>
-                                                  </div>
-
-                                                  <div class="qty_changer">
-                                                    <div class="price">
-                                                        $478
+                                                <div class="cart_img">
+                                                    <img src="./assets/images/product/11.jpg" alt="">
+                                                </div>
+                                                <div class="cart_text">
+                                                    <h3 class="product_name">adepter caharger</h3>
+                                                    <h2 class="size">34 volt</h2>
+                                                    <h4 class="color">black</h4>
+                                                    <div class="qty">x 1</div>
+                                                    <div class="extra_features">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-van-shuttle"></i></div>
+                                                                <div class="text">free delivery</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="icon"><i class="fa-solid fa-medal"></i>
+                                                                </div>
+                                                                <div class="text">guarnted</div>
+                                                            </li>
+                                                        </ul>
                                                     </div>
-                                                    <div class="qty_update">
-                                                        <button class="trash"><i class="fa-regular fa-trash-can"></i></button>
-                                                        <div class="qty_input">
-                                                            <button class="plush"><i class="fa-solid fa-plus"></i></button>
-                                                            <input class="input" type="number" value="1" min="1" />
-                                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                                    <div class="qty_changer">
+                                                        <div class="price">
+                                                            $478
+                                                        </div>
+                                                        <div class="qty_update">
+                                                            <button class="trash"><i
+                                                                    class="fa-regular fa-trash-can"></i></button>
+                                                            <div class="qty_input">
+                                                                <button class="plush"><i
+                                                                        class="fa-solid fa-plus"></i></button>
+                                                                <input class="input" type="number" value="1" min="1" />
+                                                                <button class="minus"><i
+                                                                        class="fa-solid fa-minus"></i></button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                              </div>
 
 
                                             </div>
                                             <div class="cart_list">
-                                              <div class="cart_img">
-                                                <img src="./assets/images/product/11.jpg" alt="">
-                                              </div>
-                                              <div class="cart_text">
-                                                  <h3 class="product_name">adepter caharger</h3>
-                                                  <h2 class="size">34 volt</h2>
-                                                  <h4 class="color">black</h4>
-                                                  <div class="qty">x 1</div>
-
-                                                  <div class="extra_features">
-                                                    <ul>
-                                                        <li>
-                                                            <div class="icon"><i class="fa-solid fa-van-shuttle"></i></div>
-                                                            <div class="text">free delivery</div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="icon"><i class="fa-solid fa-medal"></i></div>
-                                                            <div class="text">guarnted</div>
-                                                        </li>
-                                                    </ul>
-                                                  </div>
-
-                                                  <div class="qty_changer">
-                                                    <div class="price">
-                                                        $478
+                                                <div class="cart_img">
+                                                    <img src="./assets/images/product/11.jpg" alt="">
+                                                </div>
+                                                <div class="cart_text">
+                                                    <h3 class="product_name">adepter caharger</h3>
+                                                    <h2 class="size">34 volt</h2>
+                                                    <h4 class="color">black</h4>
+                                                    <div class="qty">x 1</div>
+                                                    <div class="extra_features">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-van-shuttle"></i></div>
+                                                                <div class="text">free delivery</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="icon"><i class="fa-solid fa-medal"></i>
+                                                                </div>
+                                                                <div class="text">guarnted</div>
+                                                            </li>
+                                                        </ul>
                                                     </div>
-                                                    <div class="qty_update">
-                                                        <button class="trash"><i class="fa-regular fa-trash-can"></i></button>
-                                                        <div class="qty_input">
-                                                            <button onclick="increment_cart()" class="plush"><i class="fa-solid fa-plus"></i></button>
-                                                            <input class="input" type="number" value="1" min="1" />
-                                                            <button onclick="decrement_cart()" class="minus"><i class="fa-solid fa-minus"></i></button>
+                                                    <div class="qty_changer">
+                                                        <div class="price">
+                                                            $478
+                                                        </div>
+                                                        <div class="qty_update">
+                                                            <button class="trash"><i
+                                                                    class="fa-regular fa-trash-can"></i></button>
+                                                            <div class="qty_input">
+                                                                <button onclick="increment_cart()" class="plush"><i
+                                                                        class="fa-solid fa-plus"></i></button>
+                                                                <input class="input" type="number" value="1" min="1" />
+                                                                <button onclick="decrement_cart()" class="minus"><i
+                                                                        class="fa-solid fa-minus"></i></button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                              </div>
-
-
-                                            </div>
-
-                                          </div>
-                                        </div>
-                                        <div class="bottom_cart">
-                                            <div class="left">
-                                                <h5 class="title">Total</h5>
-                                                <h4 class="amount">$553</h4>
-                                            </div>
-                                            <div class="right">
-                                                <a href="#">
-                                                    <span class="title">Procced to cart</span>
-                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                </a>
                                             </div>
                                         </div>
                                     </div>
-                                </li>
-                            </ul>
-                        </div>
+                                    <div class="bottom_cart">
+                                        <div class="left">
+                                            <h5 class="title">Total</h5>
+                                            <h4 class="amount">$553</h4>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#">
+                                                <span class="title">Procced to cart</span>
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <section id="jumbo_menu" class="">
-            <div class="container">
-                <div class="product_list_menu">
-                    <div class="overlay">
-                        <div class="product_category_list">
-                            <div class="category_list">
+            </div>
+        </nav>
+    </header>
+    <section id="jumbo_menu" class="">
+        <div class="container">
+            <div class="product_list_menu">
+                <div class="overlay">
+                    <div class="product_category_list">
+                        <div class="category_list">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                        <span>Mobile phones</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-laptop"></i>
+                                        <span>Laptop & computer</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-tablet"></i>
+                                        <span>Tablet & E-reader</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>Wearables</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-headphones"></i>
+                                        <span>Audio</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-camera"></i>
+                                        <span>Caremas</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-republican"></i>
+                                        <span>Gaming</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                        <span>Networking</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-keyboard"></i>
+                                        <span>Accessories</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory_list">
+                            <div class="subcategories">
                                 <ul>
                                     <li>
                                         <a href="#">
@@ -255,72 +322,21 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
-                                            <i class="fa-regular fa-clock"></i>
-                                            <span>Wearables</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-solid fa-headphones"></i>
-                                            <span>Audio</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-solid fa-camera"></i>
-                                            <span>Caremas</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-solid fa-republican"></i>
-                                            <span>Gaming</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-solid fa-network-wired"></i>
-                                            <span>Networking</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-solid fa-keyboard"></i>
-                                            <span>Accessories</span>
-                                        </a>
+                                        <a href="#" class="view_all">View all</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="subcategory_list">
-                                <div class="subcategories">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa-solid fa-mobile-screen-button"></i>
-                                                <span>Mobile phones</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa-solid fa-laptop"></i>
-                                                <span>Laptop & computer</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa-solid fa-tablet"></i>
-                                                <span>Tablet & E-reader</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="view_all">View all</a>
-                                        </li>
-                                    </ul>
+                            <div class="top_product">
+                                <div class="close">
+                                    <a href="#" onclick="jumbo_menu.classList.toggle('active')"><i
+                                            class="fa-solid fa-xmark"></i></a>
                                 </div>
-                                <div class="top_product">
-                                    <div class="close">
-                                        <a href="#" onclick="jumbo_menu.classList.toggle('active')"><i class="fa-solid fa-xmark"></i></a>
+                                <div class="nav_product_list">
+                                    <div class="nav_product">
+                                        <img src="./assets/images/product/06.jpg" alt="productImage">
+                                        <a href="#">
+                                            <h4>Camera</h4>
+                                        </a>
                                     </div>
                                     <div class="nav_product_list">
                                         <div class="nav_product">
@@ -343,23 +359,17 @@
                                                         <h4>Camera</h4>
                                                     </a>
                                                 </div>
-                                                <div class="nav_product_list">
-                                                    <div class="nav_product">
-                                                        <img src="./assets/images/product/06.jpg" alt="productImage">
-                                                        <a href="#">
-                                                            <h4>Camera</h4>
-                                                        </a>
-                                                    </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+    </section>
 
-        <script src="./assets/css/fontawesome/js/all.js"></script>
-        <script src="./assets/js/app.js"></script>
-    </body>
+    <script src="./assets/css/fontawesome/js/all.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
 </html>
