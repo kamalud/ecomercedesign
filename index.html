@@ -6,6 +6,7 @@
         <title>Ecomerce site</title>
         <link rel="stylesheet" href="./assets/css/app.css" />
         <link rel="stylesheet" href="./assets/css/fontawesome/css/all.css" />
+        <script src="./assets/js/app.js"></script>
     </head>
     <body>
         <header>
@@ -78,7 +79,149 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="#"><i onclick="cart_item.classList.toggle('active')" class="fa-solid fa-cart-shopping"></i></a>
+                                    <div class="cart_item" id="cart_item">
+                                        <div class="top_cart">
+                                            <h3 class="text">3 items</h3>
+                                        </div>
+                                        <div class="mid_cart">
+                                          <div class="cart_item_list">
+                                            <div class="cart_list">
+                                              <div class="cart_img">
+                                                <img src="./assets/images/product/11.jpg" alt="">
+                                              </div>
+                                              <div class="cart_text">
+                                                  <h3 class="product_name">adepter caharger</h3>
+                                                  <h2 class="size">34 volt</h2>
+                                                  <h4 class="color">black</h4>
+                                                  <div class="qty">x 1</div>
+
+                                                  <div class="extra_features">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="icon"><i class="fa-solid fa-van-shuttle"></i></div>
+                                                            <div class="text">free delivery</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icon"><i class="fa-solid fa-medal"></i></div>
+                                                            <div class="text">guarnted</div>
+                                                        </li>
+                                                    </ul>
+                                                  </div>
+
+                                                  <div class="qty_changer">
+                                                    <div class="price">
+                                                        $478
+                                                    </div>
+                                                    <div class="qty_update">
+                                                        <button class="trash"><i class="fa-regular fa-trash-can"></i></button>
+                                                        <div class="qty_input">
+                                                            <button class="plush"><i class="fa-solid fa-plus"></i></button>
+                                                            <input class="input" type="number" value="1" min="1" />
+                                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+
+
+                                            </div>
+                                            <div class="cart_list">
+                                              <div class="cart_img">
+                                                <img src="./assets/images/product/11.jpg" alt="">
+                                              </div>
+                                              <div class="cart_text">
+                                                  <h3 class="product_name">adepter caharger</h3>
+                                                  <h2 class="size">34 volt</h2>
+                                                  <h4 class="color">black</h4>
+                                                  <div class="qty">x 1</div>
+
+                                                  <div class="extra_features">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="icon"><i class="fa-solid fa-van-shuttle"></i></div>
+                                                            <div class="text">free delivery</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icon"><i class="fa-solid fa-medal"></i></div>
+                                                            <div class="text">guarnted</div>
+                                                        </li>
+                                                    </ul>
+                                                  </div>
+
+                                                  <div class="qty_changer">
+                                                    <div class="price">
+                                                        $478
+                                                    </div>
+                                                    <div class="qty_update">
+                                                        <button class="trash"><i class="fa-regular fa-trash-can"></i></button>
+                                                        <div class="qty_input">
+                                                            <button class="plush"><i class="fa-solid fa-plus"></i></button>
+                                                            <input class="input" type="number" value="1" min="1" />
+                                                            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+
+
+                                            </div>
+                                            <div class="cart_list">
+                                              <div class="cart_img">
+                                                <img src="./assets/images/product/11.jpg" alt="">
+                                              </div>
+                                              <div class="cart_text">
+                                                  <h3 class="product_name">adepter caharger</h3>
+                                                  <h2 class="size">34 volt</h2>
+                                                  <h4 class="color">black</h4>
+                                                  <div class="qty">x 1</div>
+
+                                                  <div class="extra_features">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="icon"><i class="fa-solid fa-van-shuttle"></i></div>
+                                                            <div class="text">free delivery</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icon"><i class="fa-solid fa-medal"></i></div>
+                                                            <div class="text">guarnted</div>
+                                                        </li>
+                                                    </ul>
+                                                  </div>
+
+                                                  <div class="qty_changer">
+                                                    <div class="price">
+                                                        $478
+                                                    </div>
+                                                    <div class="qty_update">
+                                                        <button class="trash"><i class="fa-regular fa-trash-can"></i></button>
+                                                        <div class="qty_input">
+                                                            <button onclick="increment_cart()" class="plush"><i class="fa-solid fa-plus"></i></button>
+                                                            <input class="input" type="number" value="1" min="1" />
+                                                            <button onclick="decrement_cart()" class="minus"><i class="fa-solid fa-minus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+
+
+                                            </div>
+
+                                          </div>
+                                        </div>
+                                        <div class="bottom_cart">
+                                            <div class="left">
+                                                <h5 class="title">Total</h5>
+                                                <h4 class="amount">$553</h4>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#">
+                                                    <span class="title">Procced to cart</span>
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -217,5 +360,6 @@
         </section>
 
         <script src="./assets/css/fontawesome/js/all.js"></script>
+        <script src="./assets/js/app.js"></script>
     </body>
 </html>

@@ -1,0 +1,164 @@
+.cart_item{
+    position: absolute;
+    top: calc(100% + 39px);
+    right: 0;
+    width: 512px;
+    max-height: 700px;
+    padding: 16px;
+    box-shadow: 1px 3px 10px -2px rgba(12, 104, 244, 0.5490196078);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top: 2px solid var(--primary);
+    display: none;
+    &.active{
+        display: block;
+    }
+    z-index: 9;
+    .top_cart{
+        
+        .text{
+           font-size: 18px;
+           font-weight: 300;
+           line-height: 20px;
+        }
+    }
+    .mid_cart{
+        .cart_item_list{
+            padding: 8px;
+            height: calc(700px - 253px);
+            overflow-y: scroll;
+            .cart_list{
+                padding: 16px 32px;
+                margin-bottom: 12px;
+                border-radius: 8px;
+                background-color: white;
+                box-shadow: -2px 2px 15px -1px rgba(113, 113, 113, 0.12);
+                display: flex;
+                gap: 25px;
+                align-items: center;
+                .cart_img{
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        width: 155px;
+                        height: 155px;
+                    }
+                }
+                .cart_text{
+                    width: calc(100% - 176px);
+                 .product_name,
+                 .size{
+                    font-size: 15px;
+                    line-height: 18px;
+                    font-weight: 600;
+                 }
+                 .color{
+                    margin-top: 10px;
+                 }
+                 .color,
+                 .qty{
+                    font-size: 10px;
+                    line-height: 12px;
+                    font-weight: 300;
+                 }
+                 .extra_features{
+                   ul{
+                    display: block;
+                    margin-top: 10px;
+                    li{
+                        display: flex;
+                        gap: 10px;
+                        font-size: 10px;
+                        line-height: 10px;
+                        margin-bottom: 10px;
+                        align-items: center;
+                        .icon{
+                          color: var(--primary);
+                        }
+                    }
+                   }
+                 }
+                 .qty_changer{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 30px;
+                    align-items: center;
+                    .price{
+                        font-size: 13px;
+                        line-height: 15px;
+                        display: flex;
+                    }
+                    .qty_update{
+                        display: flex;
+                    button{
+                        background-color: transparent;
+                        border: 0;
+                        outline: 0;
+                        cursor: pointer;
+                    }
+                    .trash{
+                        color: var(--error);
+                        cursor: pointer;
+                    }
+                    .qty_input{
+                        display: flex;
+                        gap: 2px;
+                        border-bottom: 1px solid #717171;
+                        .input{
+                            width: 45px;
+                            border: 0;
+                            text-align: center;
+                        }
+                    }
+                 }
+                }
+
+                }
+
+                
+            }
+
+        }
+    }
+    .bottom_cart{
+        display: flex;
+        gap: 32px;
+        // border: var(--border);
+        align-items: center;
+        padding: 15px;
+        .left{
+         .title{
+           font-size: 14px;
+           font-weight: 300;
+           line-height: 16px;
+         }
+         .amount{
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 18px;
+         }
+        }
+        .right{
+            flex: 1;
+          a{
+            background-color: var(--primary);
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            display: block;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 15px;
+            span{
+                color: white;
+            }
+            i{
+                color: white;
+            }
+          }
+        }
+    }
+}
